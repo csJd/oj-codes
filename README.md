@@ -4,7 +4,7 @@
 * sql script
 * so on
 
-[wust oj](http://acm.wust.edt.cn)
+[wust oj](http://acm.wust.edu.cn)
 
 **welcome!**
 
