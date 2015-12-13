@@ -3,6 +3,7 @@
 
 patch:
   "style/horizontal": true 
+  #in linux you you need ibus-setup to horizontal
   "menu/page_size": 5 
   "style/color_scheme": luna
   "style/font_point": 12 
