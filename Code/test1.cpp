@@ -1,29 +1,36 @@
-#include <stdio.h>
-int main ()
+#include<stdio.h>
+#define num 5
+int main()
 {
-    int a[20], n, m, k;
-    while (scanf ("%d", &n) != EOF)
+    int a[num], b[num], i, j, t, k;
+    for(i = 0; i < num; i++)
     {
-        for (int i = 0; i < n; i++)
-            scanf ("%d", &a[i]);
-        scanf ("%d %d", &m, &k);
-        for (int i = 0; i < n; i++)
-            if (m >= a[i] && m <= a[i + 1])
-            {
-                n++;
-                for (int j = n - 1; j > i + 1; j--)
-                    a[j] = a[j - 1];
-                a[i + 1] = m;
-                break;
-            }
-        for (int i = 0; i < n; i++)
-        {
-            if (i < n - 1)
-                printf ("%d ", a[i]);
-            else
-                printf ("%d\n", a[i]);
-        }
-        printf ("%d", a[k]);
+        scanf("%d", &a[i]);
+        b[i] = i;
     }
+
+    for(j = 0; j < num; j++)
+        b[j] = i;
+    for(i = 0; i < num; i++)
+    {
+        for(j = 0; j < num - 1; j++)
+        {
+            if(a[j] >= a[j + 1])
+            {
+                t = a[j];
+                a[j] = a[j + 1];
+                a[j + 1] = t;
+            }
+        }
+    }
+    for(i = 0; i < num; i++)
+        for(j = 0; j < num; j++)
+            if(b[j] == a[i])
+                b[i] = j;
+    for(i = 0; i < num; i++)
+        printf("%d ", a[i]);
+    printf("\n");
+    for(j = 0; j < num; j++)
+        printf("%d ", b[j]);
     return 0;
 }
