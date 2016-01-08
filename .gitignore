@@ -111,3 +111,6 @@ docs/_build/
 target/
 
 ### Python end ###################################
+
+##other files##
+*.pdf
