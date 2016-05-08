@@ -1,3 +1,4 @@
 # Get the user's name:
-name = raw_input("what is your name?")
-print "hello , " + name + "!"
+n = raw_input("input n: ")
+for i in range(int(n)):
+	print 2**i
