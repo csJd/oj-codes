@@ -1,10 +1,5 @@
-# My code set
+##plainCodes
 
-* my most acm code
-* sql script
-* so on
+a Repo. to backup my plain codes. 
 
-[wust oj](http://acm.wust.edu.cn)
-
-**welcome!**
-
+[welcome](http://bolg.deng.cf)
