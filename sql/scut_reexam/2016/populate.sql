@@ -6,9 +6,9 @@ INSERT INTO departments VALUES ('3', '化学');
 -- populate classes
 INSERT INTO classes VALUES ('101', '软件', '2', 2012, 25);
 INSERT INTO classes VALUES ('102', '微电子', '2', 2013, 28);
-INSERT INTO classes VALUES ('103', '无机化学', '3', 2012, 20);
-INSERT INTO classes VALUES ('104', '高分子化学', '3', 2013, 19);
-INSERT INTO classes VALUES ('105', '统计数学', '1', 2013, 11);
+INSERT INTO classes VALUES ('111', '无机化学', '3', 2012, 20);
+INSERT INTO classes VALUES ('112', '高分子化学', '3', 2013, 19);
+INSERT INTO classes VALUES ('121', '统计数学', '1', 2013, 11);
 
 -- populate students
 INSERT INTO students VALUES ('8101', '张三', '1996-7-9', '101');
