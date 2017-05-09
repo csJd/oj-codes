@@ -1,0 +1,4 @@
+{
+    //convert the file's content from UTF-8 to its original (or specific) encoding when it is saved (default: true)
+    "convert_on_save" : false
+}

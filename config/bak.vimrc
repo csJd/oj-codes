@@ -6,6 +6,7 @@ imap <A-/> <C-n>
 imap {{ {<ESC>o}<ESC>O
 
 set nu
+set expandtab "tab to blank
 set cursorline "hightlight current line
 set hlsearch
 set tabstop=4
@@ -18,16 +19,16 @@ set fencs=utf-8,ucs-bom,cp936,gb18030,big5,euc-jp,euc-kr,latin1
 
 map <F2> :call SetTitle()<CR>
 func SetTitle()
-	let l = 0
-	let l = l + 1 | call setline(l,'#include <bits/stdc++.h>')
-	let l = l + 1 | call setline(l,'using namespace std;')
-	let l = l + 1 | call setline(l,'')
-	let l = l + 1 | call setline(l,'int main()')
-	let l = l + 1 | call setline(l,'{')
-	" let l = l + 1 | call setline(l,'    //freopen("in.txt","r",stdin);')
-	" let l = l + 1 | call setline(l,'    //freopen("out.txt","w",stdout);')
-	let l = l + 1 | call setline(l,'    ')
-	let l = l + 1 | call setline(l,'    return 0;')
-	let l = l + 1 | call setline(l,'}')
-	let l = l + 1 | call setline(l,'//Last modified :  '.strftime("%Y-%m-%d %H:%M CST"))
+    let l = 0
+    let l = l + 1 | call setline(l,'#include <bits/stdc++.h>')
+    let l = l + 1 | call setline(l,'using namespace std;')
+    let l = l + 1 | call setline(l,'')
+    let l = l + 1 | call setline(l,'int main()')
+    let l = l + 1 | call setline(l,'{')
+    " let l = l + 1 | call setline(l,'    //freopen("in.txt","r",stdin);')
+    " let l = l + 1 | call setline(l,'    //freopen("out.txt","w",stdout);')
+    let l = l + 1 | call setline(l,'    ')
+    let l = l + 1 | call setline(l,'    return 0;')
+    let l = l + 1 | call setline(l,'}')
+    let l = l + 1 | call setline(l,'//Last modified :  '.strftime("%Y-%m-%d %H:%M CST"))
 endfunc
