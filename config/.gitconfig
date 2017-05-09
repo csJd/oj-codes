@@ -1,0 +1,11 @@
+[core]
+	editor = 'd:/dsr/sublime-text-3/sublime_text.exe' -n -w
+	autocrlf = true
+    safecrlf = true
+[push]
+	default = upstream
+[merge]
+	conflictstyle = diff3
+[user]
+	email = scutjd@gmail.com
+	name = Deng
