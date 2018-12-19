@@ -1,5 +1,5 @@
-##plainCodes
+##Online Judge Codes
 
-a Repo. to backup my plain codes. 
+A repo to backup some of my codes on online judge platforms
 
-[welcome](http://blog.deng.cf)
+--
