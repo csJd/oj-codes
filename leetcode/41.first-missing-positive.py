@@ -48,13 +48,13 @@ from typing import List
 
 class Solution:
     def firstMissingPositive(self, nums: List[int]) -> int:
-        nums.insert(0, 0)
+        nums.append(0)  # index is from 0
         length = len(nums)
         for i, num in enumerate(nums):
-            while 0 < num < length and i != num and nums[i] != nums[num]:
+            while 0 <= num < length and num != nums[num]:
+                # move num to it's true position
                 nums[num], nums[i] = num, nums[num]
                 num = nums[i]
-                # move num to it's
         for i, num in enumerate(nums):
             if num != i:
                 return i
