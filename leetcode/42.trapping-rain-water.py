@@ -32,7 +32,31 @@ from typing import List
 
 
 class Solution:
+    # two pointer solution
+    # https://leetcode.com/problems/trapping-rain-water/solution/
     def trap(self, height: List[int]) -> int:
+        length = len(height)
+        # forward
+        lmax = rmax = 0
+        lp = 0
+        rp = length - 1
+        result = 0
+        while lp < rp:
+            if height[lp] < height[rp]:
+                if height[lp] > lmax:
+                    lmax = height[lp]
+                else:
+                    result += lmax - height[lp]
+                lp += 1
+            else:
+                if height[rp] > rmax:
+                    rmax = height[rp]
+                else:
+                    result += rmax - height[rp]
+                rp -= 1
+        return result
+
+    def trap2(self, height: List[int]) -> int:
         length = len(height)
         # forward
         last = 0
